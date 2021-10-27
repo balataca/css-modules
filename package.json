@@ -1,0 +1,26 @@
+{
+  "name": "css-modules",
+  "version": "1.0.0",
+  "description": "A boilerplate project with webpack, react, sass and css-modules",
+  "main": "index.js",
+  "author": "Augusto Zanoni",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode=development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
