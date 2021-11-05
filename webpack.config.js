@@ -19,8 +19,8 @@ module.exports = {
               modules: {
                 auto: true,
                 namedExport: true,
-                exportOnlyLocals: true,
-                localIdentName: "[local]",
+                exportOnlyLocals: false,
+                localIdentName: "[name]__[local]",
               },
               importLoaders: 1
             },
