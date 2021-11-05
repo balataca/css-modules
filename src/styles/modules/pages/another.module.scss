@@ -1,0 +1,5 @@
+@use '../../settings/colors';
+@use '../../components/anotherCard' with (
+  $backgroundColor: colors.$secondaryColor,
+  $borderRadius: 5px
+);

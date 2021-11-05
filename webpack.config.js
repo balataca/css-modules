@@ -11,27 +11,27 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        oneOf: [
+        use: [
+          'style-loader',
           {
-            test: /\.module\.s?css$/,
-            use: [
-              'style-loader',
-              {
-                loader: 'css-loader',
-                options: {
-                  modules: {
-                    exportLocalsConvention: 'camelCaseOnly',
-                    namedExport: true,
-                    exportOnlyLocals: false,
-                  },
-                },
+            loader: 'css-loader',
+            options: {
+              modules: {
+                auto: true,
+                namedExport: true,
+                exportOnlyLocals: true,
+                localIdentName: "[local]",
               },
-              'sass-loader',
-            ]
+              importLoaders: 1
+            },
           },
           {
-            use: ['style-loader', 'css-loader', 'sass-loader'],
-          }
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass')
+            }
+          },
+          'postcss-loader',
         ],
       },
     ],

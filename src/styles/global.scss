@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html, body, #app {
+  @apply h-full w-full m-0;
+}
+
+* {
+  box-sizing: border-box;
+}

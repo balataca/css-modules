@@ -1,0 +1,11 @@
+$backgroundColor: inherit !default;
+$borderRadius: inherit !default;
+
+.anotherCard {
+  padding: 40px 80px;
+  background-color: $backgroundColor;
+  border-radius: $borderRadius;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
