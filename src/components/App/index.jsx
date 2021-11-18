@@ -1,9 +1,11 @@
 import React from 'react';
 import Home from '../Home';
-import './index.scss';
+import AnotherComponent from '../AnotherComponent';
+import '../../styles/global.scss';
 
-const App = () => (
+const App = () => (<>
   <Home />
-);
+  <AnotherComponent />
+</>);
 
 export default App;

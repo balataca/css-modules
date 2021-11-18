@@ -1,0 +1,9 @@
+@use '../../settings/colors';
+@use '../../components/anotherCard' with (
+  $backgroundColor: colors.$secondaryColor,
+  $borderRadius: 5px
+);
+
+.container {
+  @apply w-full h-full flex items-center justify-center;
+}
